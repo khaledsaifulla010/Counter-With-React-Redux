@@ -1,4 +1,9 @@
+import { useDispatch, useSelector } from "react-redux";
+
 const Counter = () => {
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
   return (
     <div>
       <div className="flex items-center justify-center border border-purple-700 py-10 w-[600px] mx-auto mt-24 gap-10 rounded-md">
